@@ -1,24 +1,22 @@
-// let storeList = []
-//
-//
-// function addItems() {
-//     console.log("Functie click werkt")
-//     // const text = document.getElementById("itemInput").valueOf;
-//     // const createListItem = "<li>" + text + "</li>";
-//     // document.getElementById("itemList").appendChild(createListItem)
-// }
-// const buttonElement = document.getElementById("itemSubmit")
-//
-// buttonElement.addEventListener("click", addItems)
-//
+let storeList = []
 
-function getNames() {
-    console.log('hallo');
+
+function addItems() {
+    const itemlist = document.getElementById("itemList")
+    const text = document.getElementById("itemInput");
+
+    const node = document.createElement("li")
+    const nodemerge = node.textContent = text
+
+
+
+    itemlist.appendChild(nodemerge)
+    console.log("Functie click werkt")
 }
 
-const buttonElement = document.getElementById("itemSubmit");
+const buttonElement = document.getElementById("itemSubmit")
 
-// als er op dit element geklikt wordt, voer dan de functie getNames uit:
-buttonElement.addEventListener('click', getNames);
+buttonElement.addEventListener("click", addItems)
 
-console.log("Script afgerond!")
+
+
